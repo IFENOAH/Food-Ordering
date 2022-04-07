@@ -9,7 +9,7 @@ const cartReducer = (state, action) => {
   if (action.type === "ADD") {
     const updatedItems = state.items.concat(action.item);
     const updatedAmount =
-      state.totalAmount + action.item.price * action.type.amount;
+      state.totalAmount + action.item.price * action.item.amount;
     return {
       items: updatedItems,
       totalAmount: updatedAmount,
