@@ -10,5 +10,4 @@ const Meals = () => {
     </Fragment>
   );
 };
-
 export default Meals;
