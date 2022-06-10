@@ -10,7 +10,6 @@ const AvailableMeals = () => {
 
   useEffect(() => {
     const fetchMeals = async () => {
-      // setIsLoading(true);
       const response = await fetch(
         "https://react-http-16bd1-default-rtdb.firebaseio.com/meals.json"
       );
@@ -19,7 +18,6 @@ const AvailableMeals = () => {
         throw new Error(alert("Something went wrong! Reload"));
       }
       const responseData = await response.json();
-
       const loadedMeals = [];
 
       for (const key in responseData) {
